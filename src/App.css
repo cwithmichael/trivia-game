@@ -1,5 +1,14 @@
+/* The animation code */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: #1e90FF;}
+}
 .App {
   text-align: center;
+}
+
+.CategoryForm {
+  padding-top: 2em;
 }
 
 .App-logo {
@@ -8,25 +17,23 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  animation-name: example;
+  animation-duration: 4s;
+  background-color:#1e90FF;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.categoryLabel {
+  font-family: 'Noto Sans', sans-serif;
 }
